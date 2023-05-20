@@ -20,7 +20,7 @@ const Works = ({ setLoading, isLoggedIn }) => {
                 setDatas(null);
                 setLoading(false)
             })
-    })
+    }, [setLoading])
     return (
         <RouteMotion>
             <PageTitle title="MY WORKS" />

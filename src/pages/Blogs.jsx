@@ -21,7 +21,7 @@ const Blogs = ({ isLoggedIn, setLoading }) => {
                 setDatas(null);
                 setLoading(false)
             })
-    })
+    }, [setLoading])
 
     return (
         <RouteMotion>
