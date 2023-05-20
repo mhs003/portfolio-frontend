@@ -44,7 +44,7 @@ const Home = () => {
                     <div className='flex flex-row gap-5 mt-3 lg:-mt-2'>
                         <a target="_blank" rel="noopener noreferrer" href='https://facebook.com/7ox1c.7'><img className='w-5 transition hover:scale-125' src={facebook} alt='facebook' /></a>
                         <a target="_blank" rel="noopener noreferrer" href='https://github.com/mhs003'><img className='w-5 transition hover:scale-125' src={github} alt='github' /></a>
-                        <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/monzurul-hasan-shihab-132299155/'><img className='w-5 transition hover:scale-125' src={linkedin} alt='linkedin' /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/mhs003/'><img className='w-5 transition hover:scale-125' src={linkedin} alt='linkedin' /></a>
                         <a target="_blank" rel="noopener noreferrer" href='https://twitter.com/BK5D30MT'><img className='w-5 transition hover:scale-125' src={twitter} alt='twitter' /></a>
                         <a target="_blank" rel="noopener noreferrer" href='https://wa.me/8801630346830'><img className='w-5 transition hover:scale-125' src={whatsapp} alt='whatsapp' /></a>
                     </div>
