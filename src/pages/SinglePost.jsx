@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
-import kali from '../images/kali.jpeg'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import RouteMotion from '../components/RouteMotion';
 import axios from 'axios';
 import Config from '../lib/Config';

@@ -6,7 +6,7 @@ import Textarea from '../components/common/Textarea'
 import Toast from '../components/Toast'
 import axios from 'axios'
 import Session from '../lib/Session'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Config from '../lib/Config'
 
 // Image upload tutorial
@@ -47,14 +47,14 @@ const CreatePost = ({ setLoading }) => {
     const [alertMsg, setAlertMsg] = useState('');
     const [isError, setIsError] = useState(false);
 
-    const createToast = (message) => {
+    /* const createToast = (message) => {
         setIsVisible(true);
         setIsError(false);
         setAlertMsg(message);
         setTimeout(() => {
             setIsVisible(false);
         }, 3000);
-    }
+    } */
 
     const createErrorToast = (message) => {
         setIsVisible(true);

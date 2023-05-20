@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import BlogCard from '../components/common/BlogCard'
-import kali from '../images/kali.jpeg'
 import PageTitle from '../components/PageTitle'
 import CompTitle from '../components/CompTitle'
 import RouteMotion from '../components/RouteMotion'

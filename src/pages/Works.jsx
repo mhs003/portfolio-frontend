@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import WorkCard from '../components/common/WorkCard'
 import PageTitle from '../components/PageTitle'
-import webss from '../images/webss.jpeg'
 import RouteMotion from '../components/RouteMotion'
 import axios from 'axios'
 import Config from '../lib/Config'

@@ -5,7 +5,6 @@ import Input from '../components/common/Input'
 import axios from 'axios'
 import Toast from '../components/Toast'
 import Session from '../lib/Session'
-import { Navigate } from 'react-router-dom'
 import Config from '../lib/Config'
 
 const getFormData = (form) => {
