@@ -12,7 +12,7 @@ import { AnimatePresence } from "framer-motion";
 import Login from "./pages/Login";
 import CreatePost from "./pages/CreatePost";
 import Dashboard from "./pages/Dashboard";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Session from "./lib/Session";
 import Loader from "./components/Loader";
 import CreateWork from "./pages/CreateWork";
@@ -22,6 +22,7 @@ function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(Session.get('loggedIn'));
 	const [token, setToken] = useState(Session.get('Token'));
 	const [loading, setLoading] = useState(false);
+	setToken(Session.get('Token'));
 
 
 	return (
