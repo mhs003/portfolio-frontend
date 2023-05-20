@@ -14,7 +14,7 @@ const Home = () => {
                 <div className='flex justify-center items-center flex-col gap-8'>
                     <div className='flex justify-center items-center gap-1 flex-col text-white'>
                         <p className='text-sm sm:text-lg'>Hello World</p>
-                        <p className='text-3xl mb-2 sm:text-5xl'><span className='text-base sm:text-xl'>I'm</span> <span className='text-cyan-500 font-bold'>Monzurul Hasan Shihab</span></p>
+                        <p className='text-3xl mb-2 sm:text-5xl'><span className='text-base sm:text-xl'>I'm</span> <span className='text-cyan-500 font-bold'>Monzurul Hasan</span></p>
                         <p className='text-lg sm:text-2xl'>A <span className='text-red-500 font-bold'>MERN Stack</span> Web Develper</p>
                     </div>
                     <div className='text-white text-center text-sm sm:text-lg max-w-xl my-4 mb-1 mx-3'>
