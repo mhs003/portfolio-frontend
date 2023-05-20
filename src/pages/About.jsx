@@ -12,7 +12,7 @@ const About = () => {
                 <div className='flex justify-center items-center flex-col'>
                     <img className="mask mask-hexagon w-56 p-[13px] bg-slate-900" src={me} alt="ME" />
                     <h4 className='text-lg sm:text-xl text-slate-300'>Hello there,</h4>
-                    <h1 className='text-3xl sm:text-5xl my-5 mt-3'><span className='text-base sm:text-xl'>I'm</span> <span className='text-cyan-500 font-bold'>Monzurul Hasan</span></h1>
+                    <h1 className='text-3xl sm:text-5xl my-5 mt-3'><span className='text-base sm:text-xl'>I'm</span> <span className='text-cyan-500 font-bold'>Monzurul Hasan <span className='hidden md:inline-block'>Shihab</span></span></h1>
                     <h5 className='text-md sm:text-lg text-slate-300 text-center mb-4'> an accomplished app developer specializing in <span className='text-cyan-500 font-bold'>Web</span> and <span className='text-cyan-500 font-bold'>Android</span> developments.</h5>
                     <h6 className='text-sm sm:text-lg text-center mt-7'>As an experienced developer, my expertise lies in leveraging the MERN stack for web development and Native for Android applications. I have a genuine passion for coding and a strong drive to stay updated with the latest trends in computer and internet technology. I take pride in delivering creative and challenging projects while prioritizing 100% customer satisfaction and meeting project deadlines. With my skills and experience, I believe I am well-equipped to excel in any project. I am excited about exploring new opportunities and contributing my expertise to innovative endeavors. Let's connect and discuss how I can help bring your ideas to fruition.</h6>
                 </div>
