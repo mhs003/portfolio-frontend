@@ -22,7 +22,6 @@ function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(Session.get('loggedIn'));
 	const [token, setToken] = useState(Session.get('Token'));
 	const [loading, setLoading] = useState(false);
-	setToken(Session.get('Token'));
 
 
 	return (
@@ -40,7 +39,7 @@ function App() {
 
 					{/* Private routes */}
 
-					<Route path='/login' element={isLoggedIn ? <Navigate to='/dashboard' /> : <Login setIsLoggedIn={setIsLoggedIn} />} />
+					<Route path='/login' element={isLoggedIn ? <Navigate to='/dashboard' /> : <Login setToken={setToken} setIsLoggedIn={setIsLoggedIn} />} />
 					<Route path='/dashboard' element={isLoggedIn ? <Dashboard setIsLoggedIn={setIsLoggedIn} /> : <Navigate to='/login' />} />
 					<Route path='/createpost' element={isLoggedIn ? <CreatePost isLoggedIn={isLoggedIn} token={token} setLoading={setLoading} /> : <Navigate to='/login' />} />
 					<Route path='/creatework' element={isLoggedIn ? <CreateWork isLoggedIn={isLoggedIn} token={token} setLoading={setLoading} /> : <Navigate to='/login' />} />
