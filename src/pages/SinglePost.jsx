@@ -77,7 +77,7 @@ const SinglePost = ({ setLoading, isLoggedIn }) => {
                 setData(null)
                 setLoading(false)
             })
-    }, [])
+    })
 
     return (
         <RouteMotion>
