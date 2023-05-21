@@ -5,6 +5,18 @@ import { facebook, github, linkedin, twitter, whatsapp } from '../icons/SocialIc
 import RouteMotion from '../components/RouteMotion';
 
 const Home = () => {
+    const cvDownload = () => {
+        fetch('CV_of_Monzurul_Hasan.pdf').then(res => {
+            res.blob().then(blob => {
+                const fileUrl = window.URL.createObjectURL(blob);
+                let alink = document.createElement('a');
+                alink.href = fileUrl;
+                alink.download = 'CV_of_Monzurul_Hasan.pdf';
+                alink.click();
+            })
+        })
+    }
+
     return (
         <RouteMotion>
             <div className='flex justify-center items-center lg:h-[calc(100vh-112px)] flex-wrap gap-8 pt-12'>
@@ -39,7 +51,7 @@ const Home = () => {
                             damping: 20
                         }}
                     >
-                        <a className='block text-sm sm:text-lg text-white border border-cyan-600 rounded-full px-4 py-2 hover:bg-cyan-500' href="#download">Download my resume</a>
+                        <button onClick={cvDownload} className='block text-sm md:text-lg text-white border border-cyan-600 rounded-full px-4 py-2 hover:bg-cyan-500'>Download my resume</button>
                     </motion.div>
                     <div className='flex flex-row gap-5 mt-3 lg:-mt-2'>
                         <a target="_blank" rel="noopener noreferrer" href='https://facebook.com/7ox1c.7'><img className='w-5 transition hover:scale-125' src={facebook} alt='facebook' /></a>
