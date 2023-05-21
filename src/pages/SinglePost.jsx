@@ -18,14 +18,14 @@ const hide = {
     }
 };
 
-const SinglePost = ({ setLoading, isLoggedIn }) => {
+const SinglePost = ({ setTitle, setLoading, isLoggedIn }) => {
     const navigate = useNavigate();
     const [toastVisible, setToastVisible] = useState(false)
     const [data, setData] = useState([])
     const param = useParams();
     const id = param.id;
     const token = Session.get('Token');
-    const postUrl = window.location.origin + '/post/' + id;
+    const postUrl = window.location.origin + '/blog/' + id;
 
     const copyLink = () => {
         try {
@@ -65,6 +65,8 @@ const SinglePost = ({ setLoading, isLoggedIn }) => {
             })
     }
 
+    
+
     useEffect(() => {
         setLoading(true);
         axios
@@ -72,6 +74,7 @@ const SinglePost = ({ setLoading, isLoggedIn }) => {
             .then((res) => {
                 setLoading(false)
                 setData(res.data.data);
+                setTitle(res.data.data.title + ' | Monzurul Hasan Blogs');
             }).catch((err) => {
                 //error
                 setData(null)

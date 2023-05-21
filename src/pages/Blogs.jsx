@@ -40,7 +40,7 @@ const Blogs = ({ isLoggedIn, setLoading }) => {
                     <div>[ No posts found! ]</div>
                 ) : (
                     datas.map((data) => {
-                        return <BlogCard key={data._id} link={"/post/" + data._id} title={data.title.length > 45 ? data.title.substr(0, 45) + ' ...' : data.title} img={data.photo} time={data.time} />
+                        return <BlogCard key={data._id} link={"/blog/" + data._id} title={data.title.length > 45 ? data.title.substr(0, 45) + ' ...' : data.title} img={data.photo} time={data.time} />
                     })
                 )}
             </div>

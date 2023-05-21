@@ -79,7 +79,7 @@ const CreatePost = ({ setLoading }) => {
             body: formData.body
         }).then((res) => {
             subBtn.classList.remove('loading');
-            navigate('/post/' + res.data.data._id);
+            navigate('/blog/' + res.data.data._id);
         }).catch((err) => {
             subBtn.classList.remove('loading');
             console.log(err.response.data);
