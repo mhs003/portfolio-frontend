@@ -17,10 +17,10 @@ Access to the server by browser [localhost:3000](http://localhost:3000) in your 
 This will create an optimized build of your project.\
 A static build of the project will be saved to `build/` folder.
 
-## Backend setup
 
-See [here](https://github.com/mhs003/note-keeper/blob/main/Server/README.md)
+
+
 
 ## Acknowledgement
 
-This project was for my practice only. You can copy the project or any code segment for practicing purpose.
+This is my personal portfolio website's script. **YOU ARE NOT ALLOWED TO COPY ANY CODE IT CONTAINS!**
