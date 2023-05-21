@@ -32,7 +32,7 @@ const Home = () => {
         })
         setTimeout(() => {
             setToastVisible(false);
-        }, 2400);
+        }, 3400);
     }
 
     return (
@@ -69,7 +69,7 @@ const Home = () => {
                             damping: 20
                         }}
                     >
-                        <button onClick={cvDownload} className='block text-sm md:text-lg text-white border border-cyan-600 rounded-full px-4 py-2 hover:bg-cyan-500'>Download my resume</button>
+                        <button onClick={cvDownload} className='block text-sm md:text-lg text-white border border-cyan-600 rounded-full px-4 py-2 hover:bg-cyan-500 text-center'>Download my resume</button>
                     </motion.div>
                     <div className='flex flex-row gap-5 mt-3 lg:-mt-2'>
                         <a target="_blank" rel="noopener noreferrer" href='https://facebook.com/7ox1c.7'><img className='w-5 transition hover:scale-125' src={facebook} alt='facebook' /></a>
@@ -79,7 +79,7 @@ const Home = () => {
                         <a target="_blank" rel="noopener noreferrer" href='https://wa.me/8801630346830'><img className='w-5 transition hover:scale-125' src={whatsapp} alt='whatsapp' /></a>
                     </div>
                 </div>
-                <motion.div animate={toastVisible ? show : hide} className='fixed bottom-24 left-1/2 -translate-x-1/2 text-black bg-slate-400 rounded-full text-sm sm:text-base p-3 px-6 z-[45]'>Downloading...</motion.div>
+                <motion.div animate={toastVisible ? show : hide} className='fixed bottom-24 left-1/2 -translate-x-1/2 text-black bg-slate-400 rounded-full text-sm sm:text-base p-3 px-6 z-[45] text-center'>Download is processing. Please wait a few seconds</motion.div>
             </div>
         </RouteMotion>
     )
