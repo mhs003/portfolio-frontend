@@ -68,7 +68,6 @@ const Home = () => {
                             stiffness: 260,
                             damping: 20
                         }}
-                        onTap={{ scale: 0.95 }}
                     >
                         <button onClick={cvDownload} className='block text-sm md:text-lg text-white border border-cyan-600 rounded-full px-4 py-2 hover:bg-cyan-500 text-center'>Download my resume</button>
                     </motion.div>
