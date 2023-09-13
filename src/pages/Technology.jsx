@@ -46,7 +46,7 @@ const Technology = () => {
                     <TechCard src={github} alt="Github" />
                     <TechCard src={git} alt="Git" />
                     <TechCard src={linux} alt="Linux OS" />
-                    <TechCard src={terminal} alt="Burne Shell" />
+                    <TechCard src={terminal} alt="Bourne Shell" />
                     <TechCard src={flyio} alt="Fly.io" />
                     <TechCard src={netlify} alt="Netlify" />
                     <TechCard src={vercel} alt="Vercel" />
