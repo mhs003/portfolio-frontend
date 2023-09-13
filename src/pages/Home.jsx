@@ -21,12 +21,12 @@ const Home = () => {
 
     const cvDownload = () => {
         setToastVisible(true);
-        fetch('CV_of_Monzurul_Hasan.pdf').then(res => {
+        fetch('MERN Stack Web Developer.pdf').then(res => {
             res.blob().then(blob => {
                 const fileUrl = window.URL.createObjectURL(blob);
                 let alink = document.createElement('a');
                 alink.href = fileUrl;
-                alink.download = 'CV_of_Monzurul_Hasan.pdf';
+                alink.download = 'mhshihab.me-Resume-2.0.pdf';
                 alink.click();
             })
         })
