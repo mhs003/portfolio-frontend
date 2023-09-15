@@ -44,16 +44,19 @@ const Login = ({ setIsLoggedIn }) => {
         axios.post(Config.SERVER_URL + '/api/v1/login', {
             passwd: formData.password
         }).then((res) => {
-            subBtn.classList.remove('loading');
-            createToast(res.data.message);
-            console.log(res.data);
-            Session.set('loggedIn', true);
-            Session.set('Token', res.data.token);
-            setIsLoggedIn(true);
+            if (res.data.token === undefined){
+                createToast(res.data.message);
+                console.log(res.data);
+                Session.set('loggedIn', true);
+                Session.set('Token', res.data.token);
+                setIsLoggedIn(true);
+            } else {
+                alert('Password is wrong');
+            }
         }).catch((err) => {
-            subBtn.classList.remove('loading');
             createErrorToast("Something went wrong. Could not login.");
         })
+        subBtn.classList.remove('loading');
     }
     return (
         <RouteMotion>
