@@ -44,7 +44,7 @@ const Login = ({ setIsLoggedIn }) => {
         axios.post(Config.SERVER_URL + '/api/v1/login', {
             passwd: formData.password
         }).then((res) => {
-            if (res.data.token === undefined){
+            if (res.data.token !== undefined){
                 createToast(res.data.message);
                 console.log(res.data);
                 Session.set('loggedIn', true);
