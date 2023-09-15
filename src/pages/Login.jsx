@@ -55,8 +55,9 @@ const Login = ({ setIsLoggedIn }) => {
             }
         }).catch((err) => {
             createErrorToast("Something went wrong. Could not login.");
-        })
-        subBtn.classList.remove('loading');
+        }).finally(() => {
+            subBtn.classList.remove('loading');
+        });
     }
     return (
         <RouteMotion>
