@@ -26,7 +26,7 @@ const Home = () => {
                 const fileUrl = window.URL.createObjectURL(blob);
                 let alink = document.createElement('a');
                 alink.href = fileUrl;
-                alink.download = 'mhshihab.me-Resume-2.0.pdf';
+                alink.download = 'mhshihab.me-Resume-3.0.pdf';
                 alink.click();
             })
         })
